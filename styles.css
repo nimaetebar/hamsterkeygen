@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-
 body {
-    font-family: 'Exo 2';
-    font-size: bold;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto', sans-serif;
+    background-color: #000b1b;
     color: #333;
     display: flex;
     justify-content: center;
@@ -16,13 +10,9 @@ body {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.9px);
-    -webkit-backdrop-filter: blur(7.9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #0d003d;
     border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
     max-width: 400px;
     width: 100%;
@@ -30,11 +20,41 @@ body {
 }
 
 h1 {
-    margin-top: 10px;
-    font: bold;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     font-size: 24px;
-    color: #fff;
+    color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.game-option {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.game-option img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.game-option p {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.game-option:hover, .game-option.selected {
+    transform: scale(1.05);
+    border-color: #4c00ff;
 }
 
 .form-group {
@@ -43,48 +63,60 @@ h1 {
 }
 
 label {
-    font-family: 'Exo 2';
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #fff;
+    color: #ffffff;
 }
 
-select {
-    font: bold;
-    font-family: 'Exo 2';
+.key-slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.key-slider input[type="range"] {
+    -webkit-appearance: none;
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    background: #fff;
-    transition: border-color 0.3s;
+    height: 8px;
+    border-radius: 5px;
+    background: #ffffff;
+    outline: none;
+    transition: background 0.3s;
 }
 
-option {
-    font: bold;
-    font-family: 'Exo 2';
-    color: white;
-    background-color: #0315b4;
+.key-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #14006d;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-select:focus {
-    border-color: #007bff;
+.key-slider input[type="range"]:hover::-webkit-slider-thumb {
+    background: #02119e;
 }
 
-.num {
-    color: #e9e7e7;
+#keyValue {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .hidden {
-    color: greenyellow;
     display: none;
 }
 
+.hiddenn {
+    display: none;
+    justify-content: center;
+}
+
 .progress-bar {
-    background-color: #ccc;
+    background-color: #f5f7fa;
     border-radius: 8px;
     overflow: hidden;
     margin-top: 25px;
@@ -106,8 +138,6 @@ select:focus {
 }
 
 .key-item {
-    font-family: 'Exo 2';
-    font: bold;
     display: flex;
     align-items: center;
     margin-top: 15px;
@@ -123,9 +153,7 @@ select:focus {
 }
 
 .copyKeyBtn {
-    font-family: 'Exo 2';
-    font: bold;
-    background-color: #191883;
+    background-color: #0d0081;
     border: none;
     padding: 12px 20px;
     color: white;
@@ -136,23 +164,27 @@ select:focus {
 }
 
 .copyKeyBtn:hover {
-    background-color: #2c0fad;
+    background-color: #00063d;
 }
 
 .footer {
-    font-family: 'Exo 2';
-    font: bold;
     margin-top: 25px;
     font-size: 14px;
-    color: #ebe8e8;
+    color: #ffffff;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.number {
+    color: #ffffff;
 }
 
 #copyStatus {
     margin-top: 15px;
-    color: rgb(2, 0, 128);
+    color: green;
 }
-
-/*button*/
 
 .genbtn {
     display: flex;
