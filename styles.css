@@ -6,10 +6,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
+    margin-top: 20px;
     background: #0d003d;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -22,7 +22,7 @@ body {
 h1 {
     margin-bottom: 25px;
     font-size: 24px;
-    color: #ffffff;
+    color: #4400ff;
 }
 
 .grid-container {
@@ -33,7 +33,7 @@ h1 {
 }
 
 .game-option {
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
@@ -54,7 +54,7 @@ h1 {
 
 .game-option:hover, .game-option.selected {
     transform: scale(1.05);
-    border-color: #4c00ff;
+    border-color: #0004ff;
 }
 
 .form-group {
@@ -91,28 +91,23 @@ label {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #14006d;
+    background: #2f00ff;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 .key-slider input[type="range"]:hover::-webkit-slider-thumb {
-    background: #02119e;
+    background: #0300b3;
 }
 
 #keyValue {
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: #3700ff;
 }
 
 .hidden {
     display: none;
-}
-
-.hiddenn {
-    display: none;
-    justify-content: center;
 }
 
 .progress-bar {
@@ -153,7 +148,7 @@ label {
 }
 
 .copyKeyBtn {
-    background-color: #0d0081;
+    background-color: #110072;
     border: none;
     padding: 12px 20px;
     color: white;
@@ -164,7 +159,7 @@ label {
 }
 
 .copyKeyBtn:hover {
-    background-color: #00063d;
+    background-color: #0f015f;
 }
 
 .footer {
@@ -173,17 +168,13 @@ label {
     color: #ffffff;
 }
 
-.footer p {
-    color: #ffffff;
+#copyStatus {
+    margin-top: 15px;
+    color: rgb(0, 184, 0);
 }
 
 .number {
     color: #ffffff;
-}
-
-#copyStatus {
-    margin-top: 15px;
-    color: green;
 }
 
 .genbtn {
